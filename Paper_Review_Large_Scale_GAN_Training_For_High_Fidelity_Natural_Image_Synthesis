@@ -1,0 +1,10 @@
+Paper Review: Large Scale GAN Training For High Fidelity Natural Image Synthesis
+
+High resolution image synthesis using GAN is challenging in serious aspects. Direct training for high resolution image synthesis usually result in unstable training process. Furthermore, quality of synthesized image is not satisfiable. In this paper, the authors are able to synthesis high quality image using GAN at resolution of 128x128 and higher and improve their Inception Score (IS) and FID (drastically). They also managed to reduced training time significantly.
+
+To achieve abovemention feat, the authors listed various observations and proposed severious trciks.
+1. increase batch size and model size
+2. splitting noise z in multiple chunks, and injecting it in multiple layers of the generator
+3. sampling from truncated normal distribution. 
+
+However, behind the sparkling results are the requirement on enormous computation power and memory. Furthermore, will these tricks still be very effective on smaller sized image synthesis? It might not be applicable most of the applications in real life setting
